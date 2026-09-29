@@ -10,7 +10,7 @@ def test_index_returns_message_and_version():
     resp = client().get("/")
     assert resp.status_code == 200
     body = resp.get_json()
-    assert body["message"] == "Hello from the Raspberry Pi"
+    assert body["message"] == "Hello from the Raspberry Pi. Just added the webhook!!"
     assert "version" in body
 
 
